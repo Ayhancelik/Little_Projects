@@ -1,0 +1,24 @@
+while True:
+	
+	onay="no"
+	et=0
+	nok=0
+	say=0
+	ma=input("mail: ")
+	
+	for i in ma:
+		say=say+1
+		if i=="@":
+			et=1	
+		elif i == ".":
+			nok=1		
+		
+	if et==1 and nok==1 and say>7:
+		onay="ok"
+
+	else:
+		print("Hatalı giriş yaptınız!")
+
+	if onay == "ok":
+		break
+
